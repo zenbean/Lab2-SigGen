@@ -37,4 +37,6 @@ int main(int argc, char **argv, char **env){
         if ((Verilated::gotFinish()) || (vbdGetkey()=='q')) 
             exit(0); // ... exit if finish OR 'q' pressed
     }
+    vbdClose();
+    exit(0);
 }
